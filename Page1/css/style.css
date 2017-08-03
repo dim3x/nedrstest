@@ -140,12 +140,12 @@ header {
     padding-right: 25px;
 }
 
-.content__head {
+content__head {
     margin: 0 auto;
 }
-
-h1 {
-    font-size: 55px;
+.
+.package {
+    font-weight: 700;
 }
 
 .container {
