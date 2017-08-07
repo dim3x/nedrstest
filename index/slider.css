@@ -1,52 +1,7 @@
-<div class="main slider-2">
-                          <div class="container">
-
-                                                <div class="container__head container">
-                                                                                      <h1>Любим математику
-                                                                                      как никто другой</h1>
-                                                                                                        </div>
-
-                                                                                                          <div class="container__text container">
-                                                                                                                                                <span>
-                                                                                                                                                Никакого креатива, только математические формулы
-для расчета идеальных пропорций.
-</span>
-  </div>
-
-    <button class="container__btn-know btn">
-                                           УЗНАТЬ БОЛЬШЕ
-                </button>
-
-                                                                    </div>
-
-                                                                      <div class="image_head">
-                                                                                             <img src="img/slide2.png">
-                                                                                                                      </div>
-                                                                                                                        </div>
-
-                                                                                                                          <div class="main slide-3">
-                                                                                                                                                   <div class="container">
-
-                                                                                                                                                                         <div class="container__head container">
-                                                                                                                                                                                                               <h1>Только ночь,
-                                                                                                                                                                                                               только хардкор</h1>
-                                                                                                                                                                                                                               </div>
-
-                                                                                                                                                                                                                                 <div class="container__text container">
-                                                                                                                                                                                                                                                                       <span>
-                                                                                                                                                                                                                                                                       Работать днем, как все? Мы против этого.
-Ближе к полуночи работа только начинается.
-</span>
-  </div>
-
-    <button class="container__btn-know btn">
-                                           УЗНАТЬ БОЛЬШЕ
-                </button>
-
-                                                                    </div>
-
-                                                                      <div class="image_head">
-                                                                                             <img src="img/slide3.png">
-                                                                                                                      </div>
-                                                                                                                        </div>
-                                                                                                                          </div>
+.slider {
+    max-width: 1160px;
+    height: 430px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
