@@ -2,64 +2,66 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Shop</title>
 
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
-
+    <script defer type="text/javascript" src="js/script.js"></script>
 
 </head>
 <body>
 <wrapper class="wrapper">
-   <header class="header-size">
-       <div class="header">
-        <div class="header__img header">
-            <a href="index.html"> <img src="img/logo.png" alt="logo"></a>
-        </div>
-        <div class="header__menu header">
-            <ul>
-              <li><a href="#" alt="main">СТУДИЯ</a></li>
-              <li><a href="#" alt="main">КЛИЕНТЫ</a></li>
-              <li><a href="#" alt="main">МАГАЗИН</a></li>
-              <li><a href="#" alt="main">КОНТАКТЫ</a></li>
-            </ul>
-        </div>
-        <div class="header__basket header">
-            <a class="package" href="#">КОРЗИНА</a>
-        </div>
+    <header class="header-size">
+        <div class="header">
+            <div class="header__img header">
+               <a href="index.html">
+                <h1><img src="img/logo.png" alt="logo"></h1>
+               </a>
+            </div>
+            <nav class="header__menu header">
+
+                <a class="header__menu_a" href="#">СТУДИЯ</a>
+                <a class="header__menu_a" href="#">КЛИЕНТЫ</a>
+                <a class="header__menu_a" href="#">МАГАЗИН</a>
+                <a class="header__menu_a" href="#">КОНТАКТЫ</a>
+
+            </nav>
+            <div class="header__basket header">
+                <a class="header__basket_a" href="#" >КОРЗИНА</a>
+            </div>
         <div class="header__article header">
-            <h1>Магазин готовых шаблонов</h1>
+            <h2 class="header__article_h2">Магазин готовых шаблонов</h2>
         </div>
-       </div>
+        </div>
   </header>
     <div class="container-middle">
-        <div class="menu">
-            <div class="price">
+        <nav class="menu">
+            <div class="menu__price">
                 <p>
                     СТОИМОСТЬ:
                 </p>
             </div>
-            <div class="sort">
+            <div class="menu__sort">
                 <p>
                     СОРТИРОВАТЬ:
                 </p>
             </div>
-            <div class="type">
-                <ul>
-                    <li><a href="#" alt="type">ПО ЦЕНЕ</a></li>
-                    <li><a href="#" alt="type">ПО ТИПУ</a></li>
-                    <li><a href="#" alt="type">ПО НАЗВАНИЮ</a></li>
+            <nav class="menu__type">
+                <ul class="menu__type_ul">
+                    <li class="menu__type_li"><a class="menu__type_a" href="#" >ПО ЦЕНЕ</a></li>
+                    <li class="menu__type_li"><a class="menu__type_a" href="#" >ПО ТИПУ</a></li>
+                    <li class="menu__type_li menu_type_li-3"><a class="menu__type_a" href="#">ПО НАЗВАНИЮ</a></li>
                 </ul>
-            </div>
-            <div class="cursor">
-               <div class="page-down"></div>
-               <div class="page-up"></div>
+            </nav>
+            <div class="menu__cursor">
+               <div class="menu__cursor__page-down"></div>
+               <div class="menu__cursor__page-up"></div>
             </div>
 
-        </div>
+        </nav>
         <div class="content">
 
-            <div class="left-column">
+            <aside class="content__left-column">
                 <div class="filters">
 
                     <form action="/echo" method="get" enctype="multipart/form-data">
@@ -73,8 +75,8 @@
                             </div>
 
                             <div class="price-controls">
-                                <label class="min-wrapper">от <input class="min-price" type="text" value="0"></label>
-                                <label class="max-wrapper">до <input class="max-price" type="text" value="15 000"></label>
+                                <label class="min-wrapper">от <input class="min-price" type="tel" value="0"></label>
+                                <label class="max-wrapper">до <input class="max-price" type="tel" value="15 000"></label>
                             </div>
 
                         </div>
@@ -83,9 +85,19 @@
 
                             <h2 class="filters-title">СЕТКА:</h2>
 
-                            <label><input type="radio" value="r" name="rb" checked><span></span>Адаптивная</label>
-                            <label><input type="radio" value="r" name="rb"><span></span>Фиксированная</label>
-                            <label><input type="radio" value="r" name="rb"><span></span>Резиновая</label>
+                            <label>
+
+                                <input class="input-filters" type="radio" value="r" name="rb" checked>
+                                <span class="a-adaptive">Адаптивная</span>
+                            </label>
+                            <label>
+                                <input class="input-filters" type="radio" value="r" name="rb">
+                                <span class="a-adaptive">Фиксированная</span>
+                            </label>
+                            <label>
+                                <input class="input-filters" type="radio" value="r" name="rb">
+                                <span class="a-adaptive">Резиновая</span>
+                            </label>
 
                         </div>
 
@@ -93,128 +105,143 @@
 
                             <h2 class="filters-title">ОСОБЕННОСТИ:</h2>
 
-                            <label><input type="checkbox" value="1" checked><span></span>Слайдер</label>
-                            <label><input type="checkbox" value="2"><span></span>Блок преимуществ</label>
-                            <label><input type="checkbox" value="3" checked><span></span>Новости</label>
-                            <label><input type="checkbox" value="4"><span></span>Галерея</label>
-                            <label><input type="checkbox" value="5"><span></span>Корзина</label>
+                            <label>
+                                <input class="checkbox-filters" type="checkbox" value="1" checked>
+                                <span class="a-features">Слайдер</span>
+                            </label>
+                            <label>
+                                <input class="checkbox-filters" type="checkbox" value="2">
+                                <span class="a-features">Блок преимуществ</span>
+                            </label>
+                            <label>
+                                <input class="checkbox-filters" type="checkbox" value="3" checked>
+                                <span class="a-features">Новости</span>
+                            </label>
+                            <label>
+                                <input class="checkbox-filters" type="checkbox" value="4">
+                                <span class="a-features">Галерея</span>
+                            </label>
+                            <label>
+                                <input class="checkbox-filters" type="checkbox" value="5">
+                                <span class="a-features">Корзина</span>
+                            </label>
 
                         </div>
 
-                        <button class="show btn">
+                        <a class="show btn">
                             ПОКАЗАТЬ
-                        </button>
+                        </a>
 
                     </form>
                 </div>
-            </div>
+            </aside>
 
-            <div class="catalog clearfix">
-                <a class="catalog-item" href="#" alt="item1">
+            <aside class="catalog clearfix">
+                <a class="catalog_item" href="#">
 
                     <div class="catalog-image">
-                        <img src="img/fisrt.png"   alt="poduct-pic">
+                        <img src="img/fisrt.png"   alt="Sedona image">
                             <div class="browser-png">
-                                <img src="img/browser-png.png" alt="">
+                                <img src="img/browser-png.png" alt="browser">
                             </div>
                     </div>
 
                     <div class="description">
-                        <div class="description-title">Sedona</div><br>
-                        <div class="description-p">Информационный сайт
+                        <div class="description-title">Sedona</div>
+                        <div class="description-p">Информационный сайт<br>
                             &nbsp;для туристов</div>
-                        <div class="btn btn-buy">9 000 р.</div>
+                        <div class="btn btn-buy">9 900 РУБ.</div>
                     </div>
 
                 </a>
 
-                <a class="catalog-item" href="#" alt="item2">
+                <a class="catalog_item" href="#" >
 
                     <div class="catalog-image">
-                        <img src="img/second.png"  alt="poduct-pic">
+                        <img src="img/second.png" alt="Pink App image">
                              <div class="browser-png">
-                                 <img src="img/browser-png.png" alt="">
+                                 <img src="img/browser-png.png" alt="browser">
                              </div>
                     </div>
 
                     <div class="description">
                         <div class="description-title">Pink App</div>
-                        <div class="description-p">Продуктовый лендинг
+                        <div class="description-p">Продуктовый лендинг<br>
                             приложения для iOS и Android</div>
-                        <div class="btn btn-buy">9 000 р.</div>
+                        <div class="btn btn-buy">9 900 РУБ.</div>
                     </div>
 
                 </a>
 
-                <a class="catalog-item" href="#" alt="item3">
+                <a class="catalog_item" href="#">
 
                     <div class="catalog-image">
-                        <img src="img/third.png" alt="poduct-pic">
-                          <div class="browser-png"><img src="img/browser-png.png" alt="">
+                        <img src="img/third.png" alt="Barbershop image">
+                          <div class="browser-png"><img src="img/browser-png.png" alt="browser">
                          </div>
                     </div>
 
                     <div class="description">
-                        <div class="description-title">Barbershop</div><br>
-                        <div class="description-p">Сайт салоны красоты. Для мужчин, да.</div>
-                        <div class="btn btn-buy">9 000 р.</div>
+                        <div class="description-title">Barbershop</div>
+                        <div class="description-p">Сайт салоны красоты.<br> Для мужчин, да.</div>
+                        <div class="btn btn-buy">9 900 РУБ.</div>
                     </div>
 
                 </a>
 
-                <a class="catalog-item" href="#" alt="item4">
+                <a class="catalog_item" href="#" >
 
                     <div class="catalog-image">
-                        <img src="img/fourth.png"  alt="poduct-pic">
+                        <img src="img/fourth.png" alt="Mishka image">
                             <div class="browser-png">
-                                <img src="img/browser-png.png" alt="">
+                                <img src="img/browser-png.png" alt="browser">
                             </div>
                     </div>
 
                     <div class="description">
-                        <div class="description-title">MISHKA</div><br>
-                        <div class="description-p">Интернет-магазин
+                        <div class="description-title">MISHKA</div>
+                        <div class="description-p">Интернет-магазин<br>
                             вязаных игрушек</div>
-                        <div class="btn btn-buy">9 000 р.</div>
+                        <div class="btn btn-buy">9 900 РУБ.</div>
                     </div>
 
                 </a>
 
-                <a class="catalog-item" href="#" alt="item5">
+                <a class="catalog_item" href="#">
 
                     <div class="catalog-image">
-                        <img src="img/fifth.png"  alt="poduct-pic">
-                          <div class="browser-png"><img src="img/browser-png.png" alt="">
+                        <img src="img/fifth.png"  alt="A plus image">
+                          <div class="browser-png"><img src="img/browser-png.png" alt="browser">
                           </div>
                     </div>
 
                     <div class="description">
-                        <div class="description-title">A Plus</div><br>
+                        <div class="description-title">A Plus</div>
                         <div class="description-p">Лендинг курсов повышения <br> квалификации</div>
-                        <div class="btn btn-buy">9 000 р.</div>
+                        <div class="btn btn-buy">9 900 РУБ.</div>
                     </div>
 
                 </a>
 
-                <a class="catalog-item" href="#" alt="item6 alt=cont">
+                <a class="catalog_item" href="#" >
 
                     <div class="catalog-image">
-                        <img src="img/six.png"  alt="poduct-pic">
+                        <img src="img/six.png"  alt="Kvast image">
                              <div class="browser-png">
-                                 <img src="img/browser-png.png" alt="">
+                                 <img src="img/browser-png.png" alt="browser">
                             </div>
                     </div>
 
                     <div class="description">
-                        <div class="description-title">КВАСТ</div><br>
-                        <div class="description-p">Промо-сайт производителя
+                        <div class="description-title">КВАСТ</div>
+                        <div class="description-p">Промо-сайт производителя<br>
                                 крафтового кваса</div>
-                        <div class="btn btn-buy">9 000 р.</div>
+                        <div class="btn btn-buy">9 900 РУБ.</div>
                     </div>
 
                 </a>
 
-            </div>
+            </aside>
         </div>
 
     </div>
@@ -222,67 +249,83 @@
 
 
     <div class="content-pagination">
-                    <a class="content-page content-page-active" href="#" alt="cont">1</a>
-                    <a class="content-page" href="#" alt="cont">2</a>
-                    <a class="content-page" href="#" alt="cont">3</a>
-                    <a class="content-page content-page-next" href="#" alt="cont">СЛЕДУЮЩАЯ</a>
+                    <a class="content-page content-page-active" href="#">1</a>
+                    <a class="content-page" href="#" >2</a>
+                    <a class="content-page" href="#" >3</a>
+                    <a class="content-page content-page-next" href="#">СЛЕДУЮЩАЯ</a>
             </div>
 
     <footer class="footer">
-        <div class="map">
-            <img src="img/map.png">
+        <div class="footer__map">
+            <img class="footer__map_img" src="img/map.png" alt="map">
             <div class="nerds-catalog">
 
             </div>
-          <div class="box">
-            <div>
-                <h2>
+            <div class="footer__box">
+                <h2 class="footer__box_h2">
                     NЁRDS DESIGN STUDIO
                 </h2>
-            </div>
-            <div>
-                <p>
+                <p class="footer__box_p">
                     191186, Санкт-Петербург,<br>
                     ул. Б. Конюшенная, д. 19/8
                 </p>
-            </div>
-            <div>
-                <a href="tel:+78122757575" alt="tel">тел. +7 (812) 275-75-75</a>
-            </div>
-            <div>
-                <button class=" btn button">
+                <a class="footer__box_tel" href="tel:+78122757575" >тел. +7 (812) 275-75-75</a>
+                <a class=" btn footer__box_button button-js" href="#">
                     НАПИШИТЕ НАМ
-                </button>
+                </a>
+            </div>
+            <div class="footer__allback">
+                <div class="back">
+                    <h3 class="back_h3">
+                        Давайте дружить, это выгодно!
+                    </h3>
+                    <p class="back_p">
+                        Скидка 10% для друзей из социальных сетей.
+                    </p>
+
+                </div>
+                <nav class="allback__social clearfix">
+                    <a class="allback__social_VK" href="#"></a>
+                    <a class="allback__social_Facebook" href="#"></a>
+                    <a class="allback__social_Instagram" href="#"></a>
+                </nav>
             </div>
         </div>
-        <div class="allback">
-            <div class="back">
-
-                <div class="end-art">
-                    <p>Давайте дружить, это выгодно!</p>
-                </div>
-                <div class="end">
-                   <p>
-                    Скидка 10% для друзей из социальных сетей.
-                   </p>
-                </div>
-            </div>
-            <div class="social clearfix">
-                <a href="#" alt="vk">
-                    <div class="VK"></div>
-                </a>
-                <a href="#" alt="facebook">
-                    <div class="Facebook"></div>
-                </a>
-                <a href="#" alt="instagram">
-                    <div class="Instagram"></div>
-                </a>
-
-            </div>
-
-        </div>
-      </div>
     </footer>
 </wrapper>
+
+<div class="popup">
+    <div class="popup__bg"></div>
+    <div class="popup__form">
+        <div class="popup__form__article">
+            <h3 class="article_h3">
+                Напишите нам
+            </h3>
+            <img class="article_img" src="img/close-cross-png-copy.png" alt="red figure">
+        </div>
+        <div class="popup__form__input">
+            <label class="popup_label"  for="1">
+                Ваше имя:<br>
+                <input class="popup_holdinput" type="text" id="1" placeholder="Представьтесь, пожалуйста">
+            </label>
+            <label class="popup_label" for="2">
+                Ваш e-mail:<br>
+                <input class="popup_holdinput" type="email" value="" id="2" placeholder="Для отправки ответа">
+            </label>
+
+        </div>
+        <div class="popup__form_textarea">
+            <label for="3">
+                Текст письма:<br>
+                <textarea class="popup_textarea" name="" id="3" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+            </label>
+        </div>
+        <div class="popup__button  btn ">
+            <p class="popup__button_p">
+                ОТПРАВИТЬ
+            </p>
+        </div>
+    </div>
+</div>
 </body>
 </html>
