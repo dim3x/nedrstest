@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Shop</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <script defer type="text/javascript" src="js/script.js"></script>
+
+</head>
+<body>
+<div class="wrapper">
+    <header class="header-size">
+        <div class="header">
+            <div class="header__img header">
+                <a href="index.html">
+                    <h1><img src="img/logo.png" alt="logo"></h1>
+                </a>
+            </div>
+            <nav class="header__menu header">
+
+                <a class="header__menu_a" href="#">СТУДИЯ</a>
+                <a class="header__menu_a" href="#">КЛИЕНТЫ</a>
+                <a class="header__menu_a" href="#">МАГАЗИН</a>
+                <a class="header__menu_a" href="#">КОНТАКТЫ</a>
+
+            </nav>
+            <div class="header__basket header">
+                <a class="header__basket_a" href="#">КОРЗИНА</a>
+            </div>
+            <div class="header__article header">
+                <h2 class="header__article_h2">Магазин готовых шаблонов</h2>
+            </div>
+        </div>
+    </header>
+
+    <nav class="menu">
+        <div class="menu__price">
+            <p>
+                СТОИМОСТЬ:
+            </p>
+        </div>
+        <div class="menu__sort">
+            <p>
+                СОРТИРОВАТЬ:
+            </p>
+        </div>
+        <nav class="menu__type">
+            <ul class="menu__type_ul">
+                <li class="menu__type_li"><a class="menu__type_a" href="#">ПО ЦЕНЕ</a></li>
+                <li class="menu__type_li"><a class="menu__type_a" href="#">ПО ТИПУ</a></li>
+                <li class="menu__type_li menu_type_li-3"><a class="menu__type_a" href="#">ПО НАЗВАНИЮ</a></li>
+            </ul>
+        </nav>
+
+    </nav>
+    <div class="content">
+
+        <aside class="content__left-column">
+
+
+            <form action="/echo" method="get" enctype="multipart/form-data">
+
+                <div class="left-column__range-filter">
+
+                    <div class="price-controls">
+                        <label class="price-controls_min-wrapper">от <input class="price-controls_min-price" type="tel"
+                                                                            value="0">
+                        </label>
+                        <label class="price-controls_max-wrapper">до <input class="price-controls_max-price" type="tel"
+                                                                            value="15 000">
+                        </label>
+                    </div>
+
+                </div>
+
+                <div class="left-column__grid">
+
+                    <h2 class="grid_filters-title">СЕТКА:</h2>
+
+                    <label class="grid_label">
+
+                        <input class="grid_radio" type="radio" value="r" name="rb" checked>
+                        <span class="grid_span">Адаптивная</span>
+                    </label>
+                    <label class="grid_label">
+                        <input class="grid_radio" type="radio" value="r" name="rb">
+                        <span class="grid_span">Фиксированная</span>
+                    </label>
+                    <label class="grid_label">
+                        <input class="grid_radio" type="radio" value="r" name="rb">
+                        <span class="grid_span">Резиновая</span>
+                    </label>
+
+                </div>
+
+                <div class="left-column__features">
+
+                    <h2 class="features_filters-title">ОСОБЕННОСТИ:</h2>
+
+                    <label class="features_label">
+                        <input class="features_checkbox" type="checkbox" value="1" checked>
+                        <span class="features_span">Слайдер</span>
+                    </label>
+                    <label class="features_label">
+                        <input class="features_checkbox" type="checkbox" value="2">
+                        <span class="features_span">Блок преимуществ</span>
+                    </label>
+                    <label class="features_label">
+                        <input class="features_checkbox" type="checkbox" value="3" checked>
+                        <span class="features_span">Новости</span>
+                    </label>
+                    <label class="features_label">
+                        <input class="features_checkbox" type="checkbox" value="4">
+                        <span class="features_span">Галерея</span>
+                    </label>
+                    <label class="features_label">
+                        <input class="features_checkbox" type="checkbox" value="5">
+                        <span class="features_span">Корзина</span>
+                    </label>
+
+                </div>
+
+                <button type="submit" class="left-column_show btn">
+                    ПОКАЗАТЬ
+                </button>
+
+            </form>
+        </aside>
+
+        <aside class="catalog clearfix">
+            <a class="catalog_item" href="#">
+
+                <div class="catalog__image">
+                    <img src="img/fisrt.png" alt="Sedona image">
+                    <div class="catalog__image__browser-png">
+                        <img src="img/browser-png.png" alt="browser">
+                    </div>
+                </div>
+
+                <div class="catalog__description">
+                    <div class="description_title">Sedona</div>
+                    <div class="description_p">Информационный сайт<br>
+                        &nbsp;для туристов
+                    </div>
+                    <div class="description_btn btn">9 900 РУБ.</div>
+                </div>
+
+            </a>
+
+            <a class="catalog_item" href="#">
+
+                <div class="catalog__image">
+                    <img src="img/second.png" alt="Pink App image">
+                    <div class="catalog__image__browser-png">
+                        <img src="img/browser-png.png" alt="browser">
+                    </div>
+                </div>
+
+                <div class="catalog__description">
+                    <div class="description_title">Pink App</div>
+                    <div class="description_p">Продуктовый лендинг<br>
+                        приложения для iOS и Android
+                    </div>
+                    <div class="description_btn btn">9 900 РУБ.</div>
+                </div>
+
+            </a>
+
+            <a class="catalog_item" href="#">
+
+                <div class="catalog__image">
+                    <img src="img/third.png" alt="Barbershop image">
+                    <div class="catalog__image__browser-png"><img src="img/browser-png.png" alt="browser">
+                    </div>
+                </div>
+
+                <div class="catalog__description">
+                    <div class="description_title">Barbershop</div>
+                    <div class="description_p">Сайт салоны красоты.<br> Для мужчин, да.</div>
+                    <div class="description_btn btn">9 900 РУБ.</div>
+                </div>
+
+            </a>
+
+            <a class="catalog_item" href="#">
+
+                <div class="catalog__image">
+                    <img src="img/fourth.png" alt="Mishka image">
+                    <div class="catalog__image__browser-png">
+                        <img src="img/browser-png.png" alt="browser">
+                    </div>
+                </div>
+
+                <div class="catalog__description">
+                    <div class="description_title">MISHKA</div>
+                    <div class="description_p">Интернет-магазин<br>
+                        вязаных игрушек
+                    </div>
+                    <div class="description_btn btn">9 900 РУБ.</div>
+                </div>
+
+            </a>
+
+            <a class="catalog_item" href="#">
+
+                <div class="catalog__image">
+                    <img src="img/fifth.png" alt="A plus image">
+                    <div class="catalog__image__browser-png"><img src="img/browser-png.png" alt="browser">
+                    </div>
+                </div>
+
+                <div class="catalog__description">
+                    <div class="description_title">A Plus</div>
+                    <div class="description_p">Лендинг курсов повышения <br> квалификации</div>
+                    <div class="description_btn btn">9 900 РУБ.</div>
+                </div>
+
+            </a>
+
+            <a class="catalog_item" href="#">
+
+                <div class="catalog__image">
+                    <img src="img/six.png" alt="Kvast image">
+                    <div class="catalog__image__browser-png">
+                        <img src="img/browser-png.png" alt="browser">
+                    </div>
+                </div>
+
+                <div class="catalog__description">
+                    <div class="description_title">КВАСТ</div>
+                    <div class="description_p">Промо-сайт производителя<br>
+                        крафтового кваса
+                    </div>
+                    <div class="description_btn btn">9 900 РУБ.</div>
+                </div>
+
+            </a>
+
+        </aside>
+    </div>
+
+
+    <div class="pagination">
+        <a class="pagination_page content-page-active" href="#">1</a>
+        <a class="pagination_page" href="#">2</a>
+        <a class="pagination_page" href="#">3</a>
+        <a class="pagination_page content-page-next" href="#">СЛЕДУЮЩАЯ</a>
+    </div>
+
+    <footer class="footer">
+        <div class="footer__map">
+            <img class="footer__map_img" src="img/map.png" alt="map">
+            <div class="nerds-catalog">
+
+            </div>
+            <section class="footer__box">
+                <h2 class="footer__box_h2">
+                    NЁRDS DESIGN STUDIO
+                </h2>
+                <p class="footer__box_p">
+                    191186, Санкт-Петербург,<br>
+                    ул. Б. Конюшенная, д. 19/8
+                </p>
+                <a class="footer__box_tel" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+                <a class=" btn footer__box_button button-js" href="#">
+                    НАПИШИТЕ НАМ
+                </a>
+            </section>
+            <div class="footer__allback">
+                <div class="back">
+                    <h3 class="back_h3">
+                        Давайте дружить, это выгодно!
+                    </h3>
+                    <p class="back_p">
+                        Скидка 10% для друзей из социальных сетей.
+                    </p>
+
+                </div>
+                <nav class="allback__icons clearfix">
+                    <a class="allback__icons_VK" href="#"></a>
+                    <a class="allback__icons_Facebook" href="#"></a>
+                    <a class="allback__icons_Instagram" href="#"></a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<div class="popup">
+    <div class="popup__bg"></div>
+    <div class="popup__form">
+        <div class="popup__form__article">
+            <h3 class="article_h3">
+                Напишите нам
+            </h3>
+            <img class="article_img" src="img/close-cross-png-copy.png" alt="red figure">
+        </div>
+        <div class="popup__form__input">
+            <label class="popup_label" for="1">
+                Ваше имя:<br>
+                <input class="popup_holdinput" type="text" id="1" placeholder="Представьтесь, пожалуйста">
+            </label>
+            <label class="popup_label" for="2">
+                Ваш e-mail:<br>
+                <input class="popup_holdinput" type="email" value="" id="2" placeholder="Для отправки ответа">
+            </label>
+
+        </div>
+        <div class="popup__form_textarea">
+            <label for="3">
+                Текст письма:<br>
+                <textarea class="popup_textarea" name="textarea" id="3" cols="30" rows="10"
+                          placeholder="В свободной форме"></textarea>
+            </label>
+        </div>
+        <button type="submit" class="popup__button  btn ">
+            ОТПРАВИТЬ
+        </button>
+    </div>
+</div>
+</body>
+</html>

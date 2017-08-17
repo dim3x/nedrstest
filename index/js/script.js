@@ -12,3 +12,4 @@ function popup(parentPopup, bgPopup, btnPopup) {
 }
 
 popup('.popup', '.popup__bg', '.button-js');
+
