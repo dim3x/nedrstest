@@ -58,14 +58,14 @@ h1 {
 
 /* HEADER*/
 
-.header-size {
+.wrapper__header-size {
     background: #eee;
     max-width: 1440px;
     margin: 0 auto;
     padding-top: 50px;
 }
 
-.header {
+.wrapper__header {
     background: #eee;
     margin: 0 auto;
     display: -webkit-box;
@@ -184,7 +184,7 @@ h1 {
 
 /*SLIDER index.html*/
 
-.slider {
+.wrapper__slider {
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -305,7 +305,7 @@ h1 {
 
 /*MENU shop.html*/
 
-.menu {
+.wrapper__menu {
     display: flex;
     flex-flow: row nowrap;
     max-width: 1160px;
@@ -400,7 +400,7 @@ h1 {
     background-image: url(../img/page-up-click.png)
 }
 
-.content {
+.wrapper__content {
     display: flex;
     flex-wrap: nowrap;
     margin: 0 auto;
@@ -607,7 +607,7 @@ h1 {
 
 /*menu index.html*/
 
-.main {
+.wrapper__main {
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -688,7 +688,7 @@ h1 {
 
 }
 
-.main::after {
+.wrapper__main::after {
     content: "";
     display: block;
     overflow: hidden;
@@ -699,7 +699,7 @@ h1 {
 
 /*CONTENT INDEX.html*/
 
-.content-cont {
+.wrapper__content-cont {
     display: flex;
     flex-flow: row;
     max-width: 1160px;
@@ -849,7 +849,7 @@ h1 {
 
 /*IMAGE BLOCK BEFORE FOOOTER index.html*/
 
-.logos {
+.wrapper__logos {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -881,7 +881,7 @@ h1 {
 
 /*CATALOG Shop.html*/
 
-.catalog {
+.wrapper__catalog {
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-end;
@@ -946,7 +946,7 @@ h1 {
     background: #eee;
 }
 
-.pagination {
+.wrapper__pagination {
     display: flex;
     flex-flow: row;
     max-width: 450px;
